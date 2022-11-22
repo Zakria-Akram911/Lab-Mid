@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- For Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- For external CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <button onclick="changeColor()" id="click-button">Alert It</button>
+    <section class="main-container">
+      <header class="header-section">
+        <div class="logo-main">
+          <div class="logo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="header-info">
+            <h3 id="date-today">November 22, 2022</h3>
+            <ul>
+              <li>
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar">
+          <ul class="navbar-main">
+            <li>
+              <a href=""><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li><a href="">News</a></li>
+            <li><a href="">Columns</a></li>
+            <li><a href="">Interviews</a></li>
+            <li><a href="">BW Communities</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">BW TV</a></li>
+            <li><a href="">Subscribe to Print</a></li>
+          </ul>
+          <ul class="navabar-search">
+            <input type="text" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="second-section-main">
+        <div class="iframe-width-left">
+          <div class="youtube-video">
+            <iframe
+              width="870"
+              height="500"
+              src="https://www.youtube.com/embed/PBTHa3UVMKI"
+              title="Meet At Agra Calling 2022"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="socialize-width-right">
+          <div class="socialize">
+            <h2>Socialize</h2>
+            <div class="socialize-content">
+              <p>
+                Get Social! Follow us on your favourite social networking
+                website.
+              </p>
+              <ul class="socialize-icons">
+                <li>
+                  <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="infocus">
+            <h2>InFocus</h2>
+            <div class="infocus-item">
+              <ul>
+                <li>
+                  <img src="images/infocus-item2.jpg" alt="" />
+                  <h4>
+                    Paying Health Insurance Premiums For Your Parents? Here's
+                    How You Can Avail Tax Deductions
+                    <span
+                      ><i class="fa-solid fa-align-right"></i
+                      ><a href="">Read More</a></span
+                    >
+                  </h4>
+                </li>
+              </ul>
+            </div>
+            <div class="infocus-item">
+              <ul>
+                <li>
+                  <img src="images/infocus-item1.jpg" alt="" />
+                  <h4>
+                    Why Diamonds Truly Are Forever
+                    <span
+                      ><i class="fa-solid fa-align-right"></i
+                      ><a href="">Read More</a></span
+                    >
+                  </h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script>
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= 80) {
+      $("nav.navbar").addClass("fixed-header");
+    } else {
+      $("nav.navbar").removeClass("fixed-header");
+    }
+  });
+</script>
+
+<script>
+  function changeColor() {
+    alert("You clicked a button");
+  }
+</script>
